@@ -210,6 +210,22 @@ img {
   margin-top: 5px;
 }
 
+.box{
+  width: 80%;
+  margin:0 auto;
+  padding-left:1%;
+  padding-right:1%;
+}
+
+.blockL {
+   float: left;
+   width: 40%;
+}
+.blockR {
+   float: right;
+   width: 40%;
+}
+
 /*--------------------------------
  Skill
 ---------------------------------*/
