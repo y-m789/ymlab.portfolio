@@ -275,10 +275,10 @@ img {
 .profile-img {
   width: 20%;
   margin-right: 30px;
-  border-radius: 50%;
+  border-radius: 10%;
 }
 .profile-img img {
-  border-radius: 50%;
+  border-radius: 10%;
 }
 .profile-body {
   flex: 1;
