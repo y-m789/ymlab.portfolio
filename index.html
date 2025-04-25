@@ -1,540 +1,286 @@
-<!doctype html>
-<html lang="jp">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta property='og:type' content='website'>
-    <meta property='og:title' content='YM Lab.  ポートフォリオ'>
-    <meta property='og:url' content='https://y-m789.github.io'>
-    <meta property='og:description' content='YM Lab. のポートフォリオサイトです。'>
-    <meta name="description" content="YM Lab. のポートフォリオサイトです" />
-    <title>YM Lab.</title>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>クリーンなポートフォリオ</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav class="topnav">
+      <h1><a href="#top" style="color: white; text-decoration: none;">Portfolio</a></h1>
+      <ul>
+        <li><a href="#profile"><i class="fas fa-user"></i> Profile</a></li>
+        <li><a href="#service"><i class="fas fa-cogs"></i> Service</a></li>
+        <li><a href="#works"><i class="fas fa-laptop-code"></i> Works</a></li>
+        <li><a href="#skill"><i class="fas fa-tools"></i> Skill</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
-
-    
-
-<!-- Bootstrap core CSS -->
-<link href="./bootstrap.min.css" rel="stylesheet">
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-
-    
-    <!-- Custom styles for this template -->
-    <link href="carousel.css" rel="stylesheet">
-  </head>
-  <body>
-    
-<!-- ヘッダーの設定 -->
-<!-- bg-successを変更することでヘッダーの色を変更できる -->
-<header>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><h6>YM Lab.</h6></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="nav-link" href="#Service">Service</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#Works">Works</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#Skill">Skill</a>
-          </li>
-        </ul>
+  <main id="top">
+    <section class="slider-section">
+      <div class="slider-container">
+        <div class="slider" id="slider">
+          <div class="slide active"><img src="images/slide1.png" alt="Slide 1"></div>
+          <div class="slide"><img src="images/slide2.png" alt="Slide 2"></div>
+        </div>
+        <div class="nav-arrows">
+          <button id="prev">&#10094;</button>
+          <button id="next">&#10095;</button>
+        </div>
       </div>
-    </div>
-  </nav>
-</header>
+    </section>
 
-<main>
+    <section class="content" id="service">
+      <h2>Service</h2>
+      <h3>下記のような案件に対応します。</h3>
+      <h3>その他案件もご相談ください。</h3>
+      <div class="card">
+        <h3>機械学習/ディープラーニングを用いたシステム開発</h3>
+      </div>
+      <div class="card">
+        <h3>研究系のデータ分析および技術開発</h3>
+      </div>
+      <div class="card">
+        <h3>研究用実験プログラムの作成</h3>
+      </div>
+      <div class="card">
+        <h3>脳波解析</h3>
+      </div>
+      <div class="card">
+        <h3>fMRI解析</h3>
+      </div>
+      <div class="card">
+        <h3>ブレインコンピュータインタフェース(BCI)などの脳波を使用したシステム開発</h3>
+      </div>
+    </section>
 
-  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    </div>
-
-    <!-- トップのスライドの設定 -->
-    <div class="carousel-inner">
-      <!-- スライド1（最初のスライド）の設定 -->
-      <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
-        <img src="./img/background.png" alt="YMLab.ロゴ" title="YMLab.ロゴ" width="100%" height="100%">
-        <div class="container">
-          <div class="carousel-caption text-start">
-            <font color="black">
-            <h1>YM Lab.</h1>
-            <h3>PORTFOLIO</h3>
-            <p>アカデミックな研究職での基礎研究、民間企業での研究開発を経て、現在はフリーランスとして活動しております。</p>
-            <p>システム開発から研究のための実験プログラムや研究成果の実用化などの請け負っています。</p>
-            </font>
-          </div>
+    <section class="content" id="works">
+      <h2>Works</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>時系列データのデータ解析</h3>
+          <p>【期間】: 2022年10月〜現在<br>
+            【概要】: 時系列データのデータ解析および結果の可視化を行っています。<br>
+            【使用言語/ツール】: python</p>
+        </div>
+        <div class="card">
+          <h3>推論アルゴリズムの開発および可視化システムの開発</h3>
+          <p>【期間】: 2022年08月〜2024年03月<br>
+            【概要】: 推論アルゴリズムの開発およびアルゴリズムの出力を可視化するシステムの開発を行っています。<br>
+            【使用言語/ツール】: python, pyside+</p>
         </div>
       </div>
 
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
-  <!-- 新着情報の設定 -->
-  <div class="container marketing">
-  
-    <!-- カードの設定 -->
-    <!-- トップページに記載したい重要な項目をここで設定する -->
-    <!-- START THE FEATURETTES -->
-
-    <!-- 一つ目のカードの設定 -->
-    <a id="Service"></a>
-    <hr class="featurette-divider">
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">Service</h2>
-        <h4><span class="text-muted"></span></h4>
-        <br>
-        <p class="lead">
-            <p>下記のような案件に対応します。</p>
-            <p>研究系のデータ分析および技術開発</p>
-            <p>機械学習/ディープラーニングを用いたシステム開発</p>
-            <p>脳波解析</p>
-            <p>fMRI解析</p>
-            <p>ブレインコンピュータインタフェース(BCI)などの脳波を使用したシステム開発</p>
-            <p>研究用実験プログラムの作成</p>
-            <p>その他案件もご相談ください。</p>
-        </p>
+      <div class="grid">
+        <div class="card">
+          <h3>画像分類システム</h3>
+          <p>【期間】: 2022年08月〜2022年10月<br>
+            【概要】: 医療系画像の分類システムの開発を行いました。<br>
+            【使用言語/ツール】: Matlab</p>
+        </div>
+        <div class="card">
+          <h3>ハプティクス制御システムの開発</h3>
+          <p>【期間】: 2022年07月〜2022年07月<br>
+            【概要】: 研究の実験系で使用するハプティクス装置の制御システムの開発を行いました。<br>
+            【使用言語/ツール】: python, C++</p>
+        </div>
       </div>
-      <div class="col-md-5">
+
+      <div class="grid">
+        <div class="card">
+          <h3>スポーツの動作解析システムの開発</h3>
+          <p>【期間】: 2022年04月〜現在<br>
+            【概要】: スポーツの動作をディープラーニングを用いて解析するシステムの研究開発を行っています。<br>
+            【使用言語/ツール】: python, pytorh</p>
+        </div>
+        <div class="card">
+          <h3>航空画像解析システム開発</h3>
+          <p>【期間】: 2022年04月〜現在<br>
+            【概要】: 上空から撮影した画像を解析するシステムの開発を行いました。<br>
+            【使用言語/ツール】: python, pytorch, github</p>
+        </div>
       </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>BCIシステムの開発</h3>
+          <p>【【期間】: 2022年02月〜2022年07月<br>
+            【概要】: リアルタイムに脳波を取得し、脳波を解析、PC上のカーソルを操作するシステムを開発しています。<br>
+            【使用言語/ツール】: python, PsychoPy</p>
+        </div>
+        <div class="card">
+          <h3>複数ビデオカメラの時刻同期システム</h3>
+          <p>【期間】: 2021年12月〜2022年03月<br>
+            【概要】: 高精度時刻同期信号をビデオカメラへ入力し、時刻同期信号を解析して記録開始時刻の異なる複数動画の時刻を同期するシステムを開発しました。<br>
+            【使用言語/ツール】: python</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>姿勢推定システムの開発</h3>
+          <p>【【期間】: 2021年08月〜2021年08月<br>
+            【概要】: 動画に映っている人の姿勢推定（骨格検出）を行うシステムを開発しました。<br>
+            【使用言語/ツール】: python</p>
+        </div>
+        <div class="card">
+          <h3>リバースエンジニアリング</h3>
+          <p>【期間】: 2021年08月〜2021年12月<br>
+            【概要】: 既存プログラムの解析および設計書、タスクシーケンスの作成を行いました。<br>
+            【使用言語/ツール】: python, oracle</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>時系列データ解析</h3>
+          <p>【期間】: 2021年06月〜現在<br>
+            【概要】: 様々な時系列データに対してデータに合わせた解析および識別を行っています。<br>
+            【使用言語/ツール】: python, sqlite, flask</p>
+        </div>
+        <div class="card">
+          <h3>領域分割システムの開発</h3>
+          <p>【期間】: 2021年04月〜2022年02月<br>
+            【概要】: ディープラーニングを用いて領域の分割を行うシステムの開発を行いました。<br>
+            【使用言語/ツール】: python, pytorch, github</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>文章分類システムの開発</h3>
+          <p>【期間】: 2020年10月〜2020年10月<br>
+            【概要】: 自然言語処理と機械学習を用いて文章を教師なし分類するシステムの開発を行いました。<br>
+            【使用言語/ツール】: python, scikit-learn</p>
+        </div>
+        <div class="card">
+          <h3>Androidアプリの開発</h3>
+          <p>【期間】: 2020年09月〜2020年11月<br>
+            【概要】: USBデバイスからの情報を取得してゲームを操作するアプリの開発を行いました。<br>
+            【使用言語/ツール】: python, kivy, sqlite</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>個人認識システムの開発および機能追加</h3>
+          <p>【期間】: 2020年07月～2022年06月<br>
+            【概要】: ディープラーニングを用いて画像から個人を推定するシステムの開発を行いました。<br>
+            【使用言語/ツール】: Matlab, Deep Learning Toolbox, Image Processing Toolbox</p>
+        </div>
+        <div class="card">
+          <h3>物体検知システムの研究開発</h3>
+          <p>【期間】: 2020年06月〜2021年03月<br>
+            【概要】: ディープラーニングを用いて画像の中にある特定の物体を検出するシステムの開発を行いました。<br>
+            【使用言語/ツール】: python, tensorflow, keras, pytorch</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>時系列予測システム</h3>
+          <p>【期間】: 2020年05月～2020年09月<br>
+            【概要】: ディープラーニング (LSTM)を用いて時系列データの未来予測を行うシステムを開発しました。<br>
+            【使用言語/ツール】: python, tensorflow, keras, jupyternotebook</p>
+        </div>
+        <div class="card">
+          <h3>動作認識技術の開発</h3>
+          <p>【期間】: 2018年04月〜2019年12月<br>
+            【概要】: ディープラーニングを用いた動作認識技術の開発を行いました。<br>
+            【使用言語/ツール】: python, git</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>脳画像データ計測・解析</h3>
+          <p>【期間】: 2015年04月～2018年03月<br>
+            【概要】: 脳波とfMRIの同時計測によるBCIシステムの計測および解析を行いました。<br>
+            【使用言語/ツール】: Matlab, SPM, FSL, CONN</p>
+        </div>
+        <div class="card">
+          <h3>脳波データ解析および脳波データのリアルタイム処理システムの構築</h3>
+          <p>【期間】: 2014年04月～2015年03月<br>
+            【概要】: 脳波データの時系列信号解析および脳波データのリアルタイム処理システムの構築を行いました。<br>
+            【使用言語/ツール】: Matlab, EEGLAB</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content" id="skill">
+      <h2>Skill</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Python</h3>
+          <div class="stars">★★★★☆</div>
+          <p>経験年数: 6年以上<br>
+            機械学習を中心としたシステム開発、データ分析、Webアプリ、Androidアプリの開発などを行います。</p>
+        </div>
+        <div class="card">
+          <h3>Matlab</h3>
+          <div class="stars">★★★★☆</div>
+          <p>経験年数: 8年以上<br>
+            脳波のような時系列データ解析、機械学習を用いたシステム開発などを行います。</p>
+        </div>
+        <div class="card">
+          <h3>C++</h3>
+          <div class="stars">★★☆☆☆</div>
+          <p>経験年数: 1年以上<br>
+            実験用システム開発、システム開発を行います。</p>
+        </div>
+        <div class="card">
+          <h3>Pyside/Tkinter</h3>
+          <div class="stars">★★★☆☆</div>
+          <p>経験年数: 3年以上<br>
+            pythonでアプリ/ソフトウェア開発などを行います。</p>
+        </div>
+        <div class="card">
+          <h3>Django</h3>
+          <div class="stars">★★★☆☆</div>
+          <p>経験年数: 3年以上<br>
+            pythonでWebアプリ開発などを行います。</p>
+        </div>
+        <div class="card">
+          <h3>Flask</h3>
+          <div class="stars">★★★☆☆</div>
+          <p>経験年数: 3年以上<br>
+            pythonでWebアプリ開発などを行います。</p>
+        </div>
+        <div class="card">
+          <h3>kivy</h3>
+          <div class="stars">★★★☆☆</div>
+          <p>経験年数: 1年以上<br>
+            pythonでAndroidアプリ開発などを行います。</p>
+        </div>
+
+        <div class="card">
+          <h3>レベル</h3>
+          <div class="stars">★☆☆☆☆<span class="label">: 初心者</span></div>
+          <div class="stars">★★☆☆☆<span class="label">: 勉強中</span></div>
+          <div class="stars">★★★☆☆<span class="label">: 普通</span></div>
+          <div class="stars">★★★★☆<span class="label">: 上級</span></div>
+          <div class="stars">★★★★★<span class="label">: エキスパート</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="content" id="profile">
+    <h2>Profile</h2>
+    <div class="profile-card">
+      <img src="images/YMLab.png" alt="プロフィール画像" class="profile-img" />
+      <p>屋号: YM Lab. <br>
+      ITエンジニア</p>
+      <p>国立の研究所で3年間研究員として勤務したのち、一部上場企業で2年間エンジニアを経験し、現在はフリーランスとして活動しています。<br>
+      研究員として脳波・fMRIなどの実験や神経科学データの解析、エンジニアとして機械学習やディープラーニングを用いた技術開発、フリーランスとしてディープラーニングを用いた研究開発やシステム開発などを経験しています。</p>
     </div>
+  </section>
 
-    <!-- 二つ目のカードの設定 -->
-    <hr class="featurette-divider">
-    <div class="row featurette">
-    <a id="Works"><h2 class="featurette-heading"><center>Works</center></h2></a>
-    <!-- 1行目 -->
-    <div class="box">
-      <div class="blockL">
-        <center>
-          <span style="border-bottom: solid 1px rgb(0, 200, 255);">
-            <font size="5%">時系列データのデータ解析</font>
-          </span>
-        </center>
-        <br>
-        【期間】: 2022年10月〜現在<br>
-        【概要】: 時系列データのデータ解析および結果の可視化を行っています。<br>
-        【使用言語/ツール】: python<br>
-        <br><br>
-      </div>
-      <div class="blockR">
-        <center>
-          <span style="border-bottom: solid 1px rgb(0, 200, 255);">
-            <font size="5%">推論アルゴリズムの開発および可視化システムの開発</font>
-          </span>
-        </center>
-        <br>
-        【期間】: 2022年08月〜現在<br>
-        【概要】: 推論アルゴリズムの開発およびアルゴリズムの出力を可視化するシステムの開発を行っています。<br>
-        【使用言語/ツール】: python, pyside<br>
-        <br><br>
-      </div>
-    </div>
-    <!-- 1行目 -->
-    <div class="box">
-      <div class="blockL">
-        <center>
-          <span style="border-bottom: solid 1px rgb(0, 200, 255);">
-            <font size="5%">画像分類システム</font>
-          </span>
-        </center>
-        <br>
-        【期間】: 2022年08月〜2022年10月<br>
-        【概要】: 医療系画像の分類システムの開発を行いました。<br>
-        【使用言語/ツール】: Matlab<br>
-        <br><br>
-      </div>
-      <div class="blockR">
-        <center>
-          <span style="border-bottom: solid 1px rgb(0, 200, 255);">
-            <font size="5%">ハプティクス制御システムの開発</font>
-          </span>
-        </center>
-        <br>
-        【期間】: 2022年07月〜2022年07月<br>
-        【概要】: 研究の実験系で使用するハプティクス装置の制御システムの開発を行いました。<br>
-        【使用言語/ツール】: python, C++<br>
-        <br><br>
-      </div>
-    </div>
-    <!-- 1行目 -->
-    <div class="box">
-      <div class="blockL">
-        <center>
-          <span style="border-bottom: solid 1px rgb(0, 200, 255);">
-            <font size="5%">スポーツの動作解析システムの開発</font>
-          </span>
-        </center>
-        <br>
-        【期間】: 2022年04月〜現在<br>
-        【概要】: スポーツの動作をディープラーニングを用いて解析するシステムの研究開発を行っています。<br>
-        【使用言語/ツール】: python, pytorh<br>
-        <br><br>
-      </div>
-      <div class="blockR">
-        <center>
-          <span style="border-bottom: solid 1px rgb(0, 200, 255);">
-            <font size="5%">航空画像解析システム開発</font>
-          </span>
-        </center>
-        <br>
-        【期間】: 2022年04月〜現在<br>
-        【概要】: 上空から撮影した画像を解析するシステムの開発を行いました。<br>
-        【使用言語/ツール】: python, pytorch, github<br>
-        <br><br>
-      </div>
-    </div>
-
-    <!-- 2行目 -->
-    <div class="box">
-      <div class="blockL">
-        <center>
-          <span style="border-bottom: solid 1px rgb(0, 200, 255);">
-            <font size="5%">BCIシステムの開発</font>
-          </span>
-        </center>
-        <br>
-        【期間】: 2022年02月〜2022年07月<br>
-        【概要】: リアルタイムに脳波を取得し、脳波を解析、PC上のカーソルを操作するシステムを開発しています。<br>
-        【使用言語/ツール】: python, PsychoPy<br>
-        <br><br>
-      </div>
-      <div class="blockR">
-        <center>
-          <span style="border-bottom: solid 1px rgb(0, 200, 255);">
-            <font size="5%">複数ビデオカメラの時刻同期システム</font>
-          </span>
-        </center>
-        <br>
-        【期間】: 2021年12月〜2022年03月<br>
-        【概要】: 高精度時刻同期信号をビデオカメラへ入力し、時刻同期信号を解析して記録開始時刻の異なる複数動画の時刻を同期するシステムを開発しました。<br>
-        【使用言語/ツール】: python<br>
-        <br><br>
-      </div>
-    </div>
-
-    <!-- 3行目 -->
-    <div class="box">
-      <div class="blockL">
-        <center>
-          <span style="border-bottom: solid 1px rgb(0, 200, 255);">
-            <font size="5%">姿勢推定システムの開発</font>
-          </span>
-        </center>
-        <br>
-        【期間】: 2021年08月〜2021年08月<br>
-        【概要】: 動画に映っている人の姿勢推定（骨格検出）を行うシステムを開発しました。<br>
-        【使用言語/ツール】: python<br>
-        <br><br>
-      </div>
-      <div class="blockR">
-        <center>
-          <span style="border-bottom: solid 1px rgb(0, 200, 255);">
-            <font size="5%">リバースエンジニアリング</font>
-          </span>
-        </center>
-        <br>
-        【期間】: 2021年08月〜2021年12月<br>
-        【概要】: 既存プログラムの解析および設計書、タスクシーケンスの作成を行いました。<br>
-        【使用言語/ツール】: python, oracle<br>
-        <br><br>
-      </div>
-    </div>
-
-    <!-- 4行目 -->
-    <div class="box">
-      <div class="blockL">
-        <center>
-          <span style="border-bottom: solid 1px rgb(0, 200, 255);">
-            <font size="5%">時系列データ解析</font>
-          </span>
-        </center>
-        <br>
-        【期間】: 2021年06月〜現在<br>
-        【概要】: 様々な時系列データに対してデータに合わせた解析および識別を行っています。<br>
-        【使用言語/ツール】: python, sqlite, flask<br>
-        <br><br>
-      </div>
-      <div class="blockR">
-        <center>
-          <span style="border-bottom: solid 1px rgb(0, 200, 255);">
-            <font size="5%">領域分割システムの開発</font>
-          </span>
-        </center>
-        <br>
-        【期間】: 2021年04月〜2022年02月<br>
-        【概要】: ディープラーニングを用いて領域の分割を行うシステムの開発を行いました。<br>
-        【使用言語/ツール】: python, pytorch, github<br>
-        <br><br>
-      </div>
-    </div>
-
-    <!-- 5行目 -->
-    <div class="box">
-      <div class="blockL">
-        <center>
-          <span style="border-bottom: solid 1px rgb(0, 200, 255);">
-            <font size="5%">文章分類システムの開発</font>
-          </span>
-        </center>
-        <br>
-        【期間】: 2020年10月〜2020年10月<br>
-        【概要】: 自然言語処理と機械学習を用いて文章を教師なし分類するシステムの開発を行いました。<br>
-        【使用言語/ツール】: python, scikit-learn<br>
-        <br><br>
-      </div>
-      <div class="blockR">
-        <center>
-          <span style="border-bottom: solid 1px rgb(0, 200, 255);">
-            <font size="5%">Androidアプリの開発</font>
-          </span>
-        </center>
-        <br>
-        【期間】: 2020年09月〜2020年11月<br>
-        【概要】: USBデバイスからの情報を取得してゲームを操作するアプリの開発を行いました。<br>
-        【使用言語/ツール】: python, kivy, sqlite <br>
-        <br><br>
-      </div>
-    </div>
-    
-    <!-- 6行目 -->
-    <div class="box">
-      <div class="blockL">
-        <center>
-          <span style="border-bottom: solid 1px rgb(0, 200, 255);">
-            <font size="5%">個人認識システムの開発および機能追加</font>
-          </span>
-        </center>
-        <br>
-        【期間】: 2020年07月～2022年06月<br>
-        【概要】: ディープラーニングを用いて画像から個人を推定するシステムの開発を行いました。<br>
-        【使用言語/ツール】: Matlab, Deep Learning Toolbox, Image Processing Toolbox<br>
-        <br><br>
-      </div>
-      <div class="blockR">
-        <center>
-          <span style="border-bottom: solid 1px rgb(0, 200, 255);">
-            <font size="5%">物体検知システムの研究開発</font>
-          </span>
-        </center>
-        <br>
-        【期間】: 2020年06月〜2021年03月<br>
-        【概要】: ディープラーニングを用いて画像の中にある特定の物体を検出するシステムの開発を行いました。<br>
-        【使用言語/ツール】: python, tensorflow, keras, pytorch<br>
-        <br><br>
-      </div>      
-    </div>
-    
-    <!-- 7行目 -->
-    <div class="box">
-      <div class="blockL">
-        <center>
-          <span style="border-bottom: solid 1px rgb(0, 200, 255);">
-            <font size="5%">時系列予測システム</font>
-          </span>
-        </center>
-        <br>
-        【期間】: 2020年05月～2020年09月<br>
-        【概要】: ディープラーニング (LSTM)を用いて時系列データの未来予測を行うシステムを開発しました。<br>
-        【使用言語/ツール】: python, tensorflow, keras, jupyternotebook <br>
-        <br><br>
-      </div>
-      <div class="blockR">
-        <center>
-          <span style="border-bottom: solid 1px rgb(0, 200, 255);">
-            <font size="5%">動作認識技術の開発</font>
-          </span>
-        </center>
-        <br>
-        【期間】: 2018年04月〜2019年12月<br>
-        【概要】: ディープラーニングを用いた動作認識技術の開発を行いました。<br>
-        【使用言語/ツール】: python, git<br>
-        <br><br>
-      </div>      
-    </div>
-
-    <!-- 8行目 -->
-    <div class="box">
-      <div class="blockL">
-        <center>
-          <span style="border-bottom: solid 1px rgb(0, 200, 255);">
-            <font size="5%">脳画像データ計測・解析</font>
-          </span>
-        </center>
-        <br>
-        【期間】: 2015年04月～2018年03月<br>
-        【概要】: 脳波とfMRIの同時計測によるBCIシステムの計測および解析を行いました。<br>
-        【使用言語/ツール】: Matlab, SPM, FSL, CONN <br>
-        <br><br>
-      </div>
-      <div class="blockR">
-        <center>
-          <span style="border-bottom: solid 1px rgb(0, 200, 255);">
-            <font size="5%">脳波データ解析および脳波データのリアルタイム処理システムの構築</font>
-          </span>
-        </center>
-        <br>
-        【期間】: 2014年04月～2015年03月<br>
-        【概要】: 脳波データの時系列信号解析および脳波データのリアルタイム処理システムの構築を行いました。<br>
-        【使用言語/ツール】: Matlab, EEGLAB <br>
-        <br><br>
-      </div>
-    </div>
-</div>
-
-
-
-    <!-- 三つ目のカードの設定 -->
-    <hr class="featurette-divider">
-    <div class="row featurette">
-      <a id="Skill"><h2 class="featurette-heading"><center>Skill</center></h2></a>
-    <!-- 1行目 -->
-    <div class="box">
-      <div class="blockL">
-          <span style="border-bottom: solid 1px rgb(0, 200, 255);">
-            <font size="5%">Python</font><br>
-          </span>
-        レベル: ★★★★☆ <br>
-        経験年数: 4年以上 <br>
-        機械学習を中心としたシステム開発、Webアプリ、Androidアプリの開発などを行います。 <br>
-        <br><br>
-      </div>
-      <div class="blockR">
-          <span style="border-bottom: solid 1px rgb(0, 200, 255);">
-            <font size="5%">Matlab</font><br>
-          </span>
-        レベル: ★★★★☆ <br>
-        経験年数: 8年以上 <br>
-        脳波のような時系列データ解析、機械学習を用いたシステム開発などを行います。 <br>
-        <br><br>
-      </div>
-    </div>
-
-    <!-- 2行目 -->
-    <div class="box">
-      <div class="blockL">
-          <span style="border-bottom: solid 1px rgb(0, 200, 255);">
-            <font size="5%">Django</font><br>
-          </span>
-        <br>
-        レベル: ★★★☆☆ <br>
-        経験年数: 2年以上 <br>
-        pythonでWebアプリ開発などを行います。 <br>
-        <br><br>
-      </div>
-      <div class="blockR">
-          <span style="border-bottom: solid 1px rgb(0, 200, 255);">
-            <font size="5%">Flask</font><br>
-          </span>
-        レベル: ★★★☆☆ <br>
-        経験年数: 2年以上 <br>
-        pythonでWebアプリ開発などを行います。 <br>
-        <br><br>
-      </div>
-    </div>
-    
-    <!-- 3行目 -->
-    <div class="box">
-      <div class="blockL">
-          <span style="border-bottom: solid 1px rgb(0, 200, 255);">
-            <font size="5%">kivy</font><br>
-          </span>
-        レベル: ★★★☆☆ <br>
-        経験年数: 1年以上 <br>
-        pythonでAndroidアプリ開発などを行います。 <br>
-        <br><br>
-      </div>
-      <div class="blockR">
-          <span style="border-bottom: solid 1px rgb(0, 200, 255);">
-            <font size="5%">レベル</font><br>
-          </span>
-        ★☆☆☆☆: 初心者 <br>
-        ★★☆☆☆: 勉強中 <br>
-        ★★★☆☆: 普通 <br>
-        ★★★★☆: 上級 <br>
-        ★★★★★: エキスパート <br>
-        <br><br>
-      </div>
-    </div>
-  </div>
-  <hr class="featurette-divider">
-
-  <div class="row featurette">
-  <a id="Works"><h2 class="featurette-heading"><center>PROFILE</center></h2></a>
-    <div class="box">
-      <div class="blockL">
-        <img src="img/YMLab.png"  width="80%" height="80%">
-      </div>
-      <div class="blockR">
-        <br><br>
-        <p>
-          屋号: YM Lab. <br>
-          ITエンジニア <br>
-        </p>
-        <p>
-          国立の研究所で３年間研究員として勤務したのち、一部上場企業で２年間エンジニアを経験し、現在はフリーランスとして活動しています。<br>
-          研究員として脳波・fMRIなどの実験や神経科学データの解析、エンジニアとして機械学習やディープラーニングを用いた技術開発、フリーランスとしてディープラーニングを用いた研究開発やシステム開発などを経験しています。<br>
-        </p>
-        <br>
-      </div>
-    </div>
-  </div>
-  
-  </div>
-
-    <!-- /END THE FEATURETTES -->
-
-  </div><!-- /.container -->
-
-
-  <!-- 下段のコピーライトなどの設定 -->
-  <!-- FOOTER -->
-  <footer class="container">
-    <p class="float-end"><a href="#">Back to top</a></p>
-    <p>&copy; YM Lab.</p>
-  </footer>
-</main>
-
-
-    <script src="./bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  </body>
+  <script src="js/scripts.js"></script>
+</body>
 </html>
